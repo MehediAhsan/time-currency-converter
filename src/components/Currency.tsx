@@ -83,9 +83,7 @@ const Currency = () => {
         </Button>
       </FormControl>
       <Box mt={10}>{amount} {amount && toCountry}</Box>
-      <Box justifySelf="flex-end" mt={44} ml={52}>
-        <Link to="/">Back to Home</Link>
-      </Box>
+      
     </div>
   );
 };

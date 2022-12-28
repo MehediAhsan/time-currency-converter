@@ -1,21 +1,26 @@
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, Button, Heading, WrapItem } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
+import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Button, Flex, Grid, Heading, VStack, WrapItem } from '@chakra-ui/react';
+import { Link, Outlet } from 'react-router-dom';
+import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 const Home = () => {
     return (
-        <div>
-            <Heading as='h2' size='2xl' mb={10} noOfLines={1}>
-                Time Currency converter
-            </Heading>
-            <Breadcrumb ml={44} separator='-'>
-  <WrapItem>
-      <Button colorScheme='orange' mr={5}><Link to='/time'>Time</Link></Button>
-    </WrapItem>
-    <WrapItem>
-      <Button colorScheme='yellow'><Link to='/currency'>Currency</Link></Button>
-    </WrapItem>
-</Breadcrumb>
-        </div>
+        <Box textAlign="center" fontSize="xl">
+        <Grid minH="100vh" p={3}>
+          <Flex justifyContent={'space-between'}>
+            <Flex gap={5}>
+                <Link  to='/'>Home</Link>
+                <Link  to='/blog'>Blog</Link>
+            </Flex>
+          <ColorModeSwitcher justifySelf="flex-end" />
+  
+          </Flex>
+          <VStack spacing={8}>     
+         <Outlet/>
+         
+
+         </VStack>
+        </Grid>
+      </Box>
     );
 };
 

@@ -1,0 +1,42 @@
+[
+    {
+      "id": "1",
+      "name": "What is HTML?",
+      "description": "HTML is stands for HyperText Markup Language.It is the language of the World Wide Web. It isthe standard text formatting language that is mainy used for creating and displaying pages on the Web. HTML documents are made up of two important things: the content and the tags thatformat it for proper display on pages."
+    },
+    {
+      "id": "2",
+      "name": "Do all HTML tags come in a pair?",
+      "description": "No, there are single HTML tags that do not need a closing tag.For examples - the <img> tag and <br> tags."
+    },
+    {
+      "id": "3",
+      "name": "What is an image map?",
+      "description": "Image map lets I link to many different web pages using a single image. I can define shapes in images that I want to make part of an image mapping."
+    },
+    {
+      "id": "4",
+      "name": "What is the advantage of collapsing white space?",
+      "description": "White spaces are a blank sequence of space characters, which is treated as a single space character in HTML. Because the browser collapses multiple spaces into a single space, I can indent lines of text without worrying about multiple spaces."
+    },
+    {
+      "id": "5",
+      "name": "Does a hyperlink apply to text only?",
+      "description": "No, hyperlinks can be used in the text and images. That means I can convert an image into alink that will allow users to link to another page when clicked."
+    },
+    {
+      "id": "6",
+      "name": "How do you create multicolored text in a webpage?",
+      "description": "To create text with different colors, use the <font color=”color”>.....</font> tags for every character that I want to apply color. I can use this tag combination as many times as needed,surrounding a single character or an entire word."
+    },
+    {
+      "id": "7",
+      "name": "What is a marquee?",
+      "description": "A marquee allows to put a scrolling text in a web page. I want to appear scrolling within the <marquee> and </marquee> tags."
+    },
+    {
+      "id": "8",
+      "name": "Is it possible to set specific colors for table borders?",
+      "description": "I can specify a border color using style sheets, but the colors for a table that does not use style sheets will be the same as the text color."
+    }
+]

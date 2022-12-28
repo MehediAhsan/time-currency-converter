@@ -54,7 +54,7 @@ import {
           Convert
         </Button>
         </FormControl>
-        <Box justifySelf="flex-end" mt={44} ml={52}><Link to='/'>Back to Home</Link></Box>
+        
       </div>
     );
   };
