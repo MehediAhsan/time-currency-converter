@@ -14,10 +14,10 @@ const Currency = () => {
   const [fromCountry, setFromCountry] = useState<string>("");
   const [ toCountry, setToCountry] = useState<string>("");
   const [amount, setAmount] = useState<any | null>("");
-  let baseUSA:number;
+  let baseUSD:number;
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-    setInput(e.target.value);
+    setInput(parseInt(e.target.value));
 
   const handleCountryChange = (e: React.ChangeEvent<HTMLSelectElement>) =>
     setFromCountry(e.target.value);
@@ -31,24 +31,24 @@ const Currency = () => {
         
         console.log(input, fromCountry, toCountry);
         if(fromCountry==='BD'){
-            baseUSA = input * 0.0097;
+            baseUSD = input * 0.0097;
         }
-        else if(fromCountry==='USA'){
-            baseUSA = input * 1;
+        else if(fromCountry==='USD'){
+            baseUSD = input * 1;
         }
         else if(fromCountry==='INR'){
-            baseUSA = input * 0.012;
+            baseUSD = input * 0.012;
         }
         if(toCountry==='BD'){
-            const value = baseUSA * 102.62;
+            const value = baseUSD * 102.62;
             setAmount(value)
         }
-        else if(toCountry==='USA'){
-            const value = baseUSA;
+        else if(toCountry==='USD'){
+            const value = baseUSD;
             setAmount(value)
         }
         else if(toCountry==='INR'){
-            const value = baseUSA * 82.78;
+            const value = baseUSD * 82.78;
             setAmount(value)
         }
 
@@ -82,7 +82,7 @@ const Currency = () => {
           Convert
         </Button>
       </FormControl>
-      <Box mt={10}>{amount}</Box>
+      <Box mt={10}>{amount} {amount && toCountry}</Box>
       <Box justifySelf="flex-end" mt={44} ml={52}>
         <Link to="/">Back to Home</Link>
       </Box>
