@@ -10,7 +10,7 @@ const Blog = () => {
 
 
     return (
-        <Box width="60%">
+        <Box width="65%" marginTop={20} border='1px' borderColor='gray.700' padding={10}>
             <Accordion allowToggle>
   {
     interviews.map(interview => <AccordionItem>

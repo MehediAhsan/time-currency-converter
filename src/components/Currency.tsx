@@ -30,7 +30,7 @@ const Currency = () => {
     const handleSubmit = (_e:any) => {
         
         console.log(input, fromCountry, toCountry);
-        if(fromCountry==='BD'){
+        if(fromCountry==='BDT'){
             baseUSD = input * 0.0097;
         }
         else if(fromCountry==='USD'){
@@ -39,7 +39,13 @@ const Currency = () => {
         else if(fromCountry==='INR'){
             baseUSD = input * 0.012;
         }
-        if(toCountry==='BD'){
+        else if(fromCountry==='EUR'){
+            baseUSD = input * 1.07;
+        }
+        else if(fromCountry==='PHP'){
+            baseUSD = input * 0.018;
+        }
+        if(toCountry==='BDT'){
             const value = baseUSD * 102.62;
             setAmount(value)
         }
@@ -51,13 +57,21 @@ const Currency = () => {
             const value = baseUSD * 82.78;
             setAmount(value)
         }
+        else if(toCountry==='EUR'){
+            const value = baseUSD * 0.93;
+            setAmount(value)
+        }
+        else if(toCountry==='PHP'){
+            const value = baseUSD * 55.68;
+            setAmount(value)
+        }
 
     }
 
 
 
   return (
-    <div>
+    <Box width='25%' border='1px' borderColor='gray.700' padding={6}>
       <FormControl>
         <FormLabel>Amout</FormLabel>
         <Input
@@ -68,15 +82,19 @@ const Currency = () => {
         />
         <FormLabel>From</FormLabel>
         <Select onChange={handleCountryChange} placeholder="Select country">
-          <option>BD</option>
+          <option>BDT</option>
           <option>USD</option>
           <option>INR</option>
+          <option>EUR</option>
+          <option>PHP</option>
         </Select>
         <FormLabel>To</FormLabel>
         <Select onChange={handleConvertChange} placeholder="Select country">
-          <option>BD</option>
+          <option>BDT</option>
           <option>USD</option>
           <option>INR</option>
+          <option>EUR</option>
+          <option>PHP</option>
         </Select>
         <Button onClick={handleSubmit} mt={4} colorScheme="teal" type="submit">
           Convert
@@ -84,7 +102,7 @@ const Currency = () => {
       </FormControl>
       <Box mt={10}>{amount} {amount && toCountry}</Box>
       
-    </div>
+    </Box>
   );
 };
 

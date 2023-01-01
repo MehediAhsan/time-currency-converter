@@ -28,7 +28,7 @@ import {
     }
   
     return (
-      <div>
+      <Box width='23%' border='1px' borderColor='gray.700' padding={6}>
         <FormControl>
           <FormLabel>Time</FormLabel>
           <Input
@@ -55,7 +55,7 @@ import {
         </Button>
         </FormControl>
         
-      </div>
+      </Box>
     );
   };
   

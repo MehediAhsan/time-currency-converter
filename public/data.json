@@ -38,5 +38,135 @@
       "id": "8",
       "name": "Is it possible to set specific colors for table borders?",
       "description": "I can specify a border color using style sheets, but the colors for a table that does not use style sheets will be the same as the text color."
+    },
+    {
+      "id": "9",
+      "name": "What is CSS ?",
+      "description": "The full form of CSS is Cascading Style Sheets. It is a styling language which is simple enough for HTML elements. It is popular in web designing, and its application is common in XHTML also."
+    },
+    {
+      "id": "10",
+      "name": "What does CSS selector mean?",
+      "description": "A string equivalent of HTML elements by which declarations or a set of it, is declared and is a link that can be referred for linking HTML and Style sheet is called CSS selector."
+    },
+    {
+      "id": "11",
+      "name": "Differentiate Class selector from ID selector?",
+      "description": "ID selector prefers only a single element differing from other elements. In other words, ID are uniques while classes are not. Its possible that an element has both class and ID."
+    },
+    {
+      "id": "12",
+      "name": "What is Pseudo-elements ?",
+      "description": "Pseudo-elements are used to add special effects to some selectors. CSS in used to apply styles in HTML mark-up. In some cases when extra mark-up or styling is not possible for the document, then there is a feature available in CSS known as pseudo-elements."
+    },
+    {
+      "id": "13",
+      "name": "How does Z index function?",
+      "description": "Z index helps in specifying the overlapping element. It is a number which can be positive or negative, the default value being zero."
+    },
+    {
+      "id": "14",
+      "name": "Define property?",
+      "description": "A style that helps in influencing CSS. font. They have corresponding values or properties within them, like font has different style like bold, italic etc."
+    },
+    {
+      "id": "15",
+      "name": "What is Inline style?",
+      "description": "The Inline style in a CSS is used to add up styling to individual HTML elements."
+    },
+    {
+      "id": "16",
+      "name": "What is JavaScript?",
+      "description": "JavaScript is a client-side scripting language. JavaScript is used mainly for the interaction of a user with the webpage. I can make my webpage more lively and interactive, with the help of JavaScript. JavaScript is also being used widely in game development and Mobile application development."
+    },
+    {
+      "id": "17",
+      "name": "What are undeclared and undefined variables?",
+      "description": "Undeclared variables are those that do not exist in a program and are not declared. If the program tries to read the value of an undeclared variable, then a runtime error is encountered.Undefined variables are those that are declared in the program but have not been given anyvalue. If the program tries to read the value of an undefined variable, an undefined value is returned."
+    },
+    {
+      "id": "17",
+      "name": "What are undeclared and undefined variables?",
+      "description": "Undeclared variables are those that do not exist in a program and are not declared. If the program tries to read the value of an undeclared variable, then a runtime error is encountered.Undefined variables are those that are declared in the program but have not been given anyvalue. If the program tries to read the value of an undefined variable, an undefined value is returned."
+    },
+    {
+      "id": "18",
+      "name": "Difference between “==” and “===”?",
+      "description": "“==” checks only for equality in value, whereas “===” is a stricter equality test and returns false if either the value or the type of the two variables are different."
+    },
+    {
+      "id": "19",
+      "name": "What do you mean by NULL in Javascript?",
+      "description": "The NULL value is used to represent no value or no object. It implies no object or null string, no valid boolean value, no number, and no array object."
+    },
+    {
+      "id": "20",
+      "name": "What are JavaScript Cookies?",
+      "description": "Cookies are the small test files stored in a computer, and they get created when the user visits the websites to store information that they need. Examples could be User Name details and shopping cart information from previous visits."
+    },
+    {
+      "id": "21",
+      "name": "What is break and continue statements?",
+      "description": "Break statement exits from the current loop. Continue statement continues with next statement of the loop."
+    },
+    {
+      "id": "22",
+      "name": "What is event bubbling?",
+      "description": "JavaScript allows DOM elements to be nested inside each other. If the handler of the child is clicked, the handler of the parent will also work as if it were clicked too."
+    },
+    {
+      "id": "23",
+      "name": "What is the arrow function in es6?",
+      "description": "An arrow function expression can be used as an alternative to the old JavaScript function expression but is limited and can not be used all the time. Arrow functions are bound to this keyword unlike the normal functions which are dynamically binding."
+    },
+    {
+      "id": "24",
+      "name": "What do you understand by the Hoisting in JavaScript?",
+      "description": "Hoisting in Javascript is done during compilation, it is the process to move the variables, and functions declarations to the top of the scope."
+    },
+    {
+      "id": "25",
+      "name": "Discuss the spread operator in ES6 with an example.",
+      "description": "The spread operator is introduced in JavaScript ES6. It takes an array or iterable and expands it into individual elements.It is also used to make copies of JS objects."
+    },
+    {
+      "id": "26",
+      "name": "What are the template literals in ES6?",
+      "description": "Template literals are introduced in ES6 to overcome the problem with string concatenation in our programs. Now we have to use character instead of or quotes, to produce a new string."
+    },
+    {
+      "id": "27",
+      "name": "What are the default parameters?",
+      "description": "Default function parameters are used to initialize parameters with default values if no value or undefined is passed to the variable."
+    },
+    {
+      "id": "28",
+      "name": "Define Map.",
+      "description": "The map is a feature introduced in ES6, is a collection of elements where each element is stored as a Key-value pair. It can hold both objects and primitive values. On iterating on the map object, it returns the key-value pairs."
+    },
+    {
+      "id": "29",
+      "name": "What are modules in JavaScript?",
+      "description": "A module is a piece of code that makes maintenance of code easier. It also increases the reusability of the code. The modules of JavaScript contain a piece of JavaScript code in different files. Each module gets executed once after it is loaded to the main function."
+    },
+    {
+      "id": "30",
+      "name": "What is the meaning of Virtual DOM?",
+      "description": "A virtual DOM is a JavaScript object that is exact copy of the real DOM. It considered as a node tree which consists of elements, attributes, and other properties. Using the render function in react it creates a node tree and updates it based on the changes that occur in the data model."
+    },
+    {
+      "id": "31",
+      "name": "What are states in React?",
+      "description": "States considered as a source of data or objects that control aspects such as component behavior and rendering. States are used to easily create dynamic and interactive components.The state is a built-in React object that is used to contain information about the component.It is used to contain and can modify data or information about the component over time."
+    },
+    {
+      "id": "32",
+      "name": "What are Hooks in React?",
+      "description": "Hooks are used to make use of the state and other features without having to explicitly write a class. Hooks were added to the React v16.8. The stateful logic can be extracted from a component easily, testing and reusing it. All of this is done without making any changes to the component hierarchy."
+    },
+    {
+      "id": "33",
+      "name": "What are events in React?",
+      "description": "Whenever there are actions performed in React, hovering the mouse or pressing a key on the keyboard, in these actions trigger events. Events then perform set activities as a response to these triggers. Handling an event in react is very similar to that in the DOM architecture."
     }
 ]
